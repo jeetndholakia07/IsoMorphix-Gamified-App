@@ -87,7 +87,7 @@ const PowerButtons: FC<buttonProps> = ({ handleReverseMove, handleHintMove, hand
                     <div className="flex flex-col w-35 items-center justify-center">
                         {/* Hint Button */}
                         <button
-                            className="w-35 px-3 text-center py-2 text-lg text-white bg-yellow-400 hover:bg-yellow-500 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
+                            className="w-35 px-3 text-center text-nowrap py-2 text-lg text-white bg-yellow-400 hover:bg-yellow-500 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
                             onClick={() => UseHint()}
                             disabled={hintMoves === 0}
                         >
@@ -96,7 +96,7 @@ const PowerButtons: FC<buttonProps> = ({ handleReverseMove, handleHintMove, hand
 
                         {/* Power Button */}
                         <button
-                            className="w-35 px-3 py-2 text-center text-lg text-white bg-purple-600 hover:bg-purple-700 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
+                            className="w-35 px-3 py-2 text-center text-nowrap text-lg text-white bg-purple-600 hover:bg-purple-700 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
                             onClick={() => UseSuperPower()}
                             disabled={superPowers === 0}
                         >
@@ -105,7 +105,7 @@ const PowerButtons: FC<buttonProps> = ({ handleReverseMove, handleHintMove, hand
 
                         {/* Reverse Move Button */}
                         <button
-                            className="w-35 px-3 py-2 text-center text-lg text-white bg-teal-500 hover:bg-teal-600 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
+                            className="w-35 px-3 py-2 text-center text-nowrap text-lg text-white bg-teal-500 hover:bg-teal-600 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
                             onClick={() => UseReverseMove()}
                             disabled={reverseMoves === 0}
                         >
@@ -114,14 +114,14 @@ const PowerButtons: FC<buttonProps> = ({ handleReverseMove, handleHintMove, hand
 
                         {/* Solution Button */}
                         <button
-                            className="w-35 px-3 py-2 text-center text-lg text-white bg-green-600 hover:bg-green-700 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
+                            className="w-35 px-3 py-2 text-center text-nowrap text-lg text-white bg-green-600 hover:bg-green-700 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
                             onClick={() => UseSolution()}
                         >
                             <i className="bi bi-check-circle-fill text-lg mr-2"></i>{t("solutionPower")}({solutionPower})
                         </button>
 
                         {/* Reset Button */}
-                        <button className="w-35 px-3 py-2 text-center text-lg text-white bg-red-600 hover:bg-red-700 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
+                        <button className="w-35 px-3 py-2 text-center text-nowrap text-lg text-white bg-red-600 hover:bg-red-700 hover:cursor-pointer rounded-sm transition-all duration-300 transform hover:scale-105"
                             onClick={() => handleReset()}>
                             <i className="bi bi-arrow-repeat text-lg mr-2"></i>{t("reset")}
                         </button>

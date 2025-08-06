@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { type RootState } from "../../context/store/store";
+import { type RootState } from "../../context/store/store.js";
 import { useTranslation } from "react-i18next";
 
 const Games = () => {

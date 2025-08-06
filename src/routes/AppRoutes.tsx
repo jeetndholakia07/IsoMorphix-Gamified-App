@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router";
-import MainLayout from "../pages/MainLayout";
-import Home from "../pages/Home";
-import Games from "../pages/Games";
-import GamePlay from "../pages/Games/GamePlay";
-import Leaderboard from "../pages/Leaderboard";
+import MainLayout from "../pages/MainLayout.js";
+import Home from "../pages/Home/index.js";
+import Games from "../pages/Games/index.js";
+import GamePlay from "../pages/Games/GamePlay.js";
+import Leaderboard from "../pages/Leaderboard/index.js";
 import { useSelector } from "react-redux";
-import type { RootState } from "../context/store/store";
-import { tableColumns } from "../pages/Leaderboard/tableColumns";
+import type { RootState } from "../context/store/store.js";
+import { tableColumns } from "../pages/Leaderboard/tableColumns.js";
 import { useMemo } from "react";
-import HowToPlay from "../pages/HowToPlay";
+import HowToPlay from "../pages/HowToPlay/index.js";
 
 const AppRoutes = () => {
     const userData = useSelector((state: RootState) => state.userData.user);

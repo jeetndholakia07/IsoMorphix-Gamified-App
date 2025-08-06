@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect, type FC } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { useHint, useReverseMove, useSuperPower, useSolutionPower } from "../../context/userSlice";
-import { type RootState } from "../../context/store/store";
-import { useToast } from "../Toast/ToastContext";
+import { useHint, useReverseMove, useSuperPower, useSolutionPower } from "../../context/userSlice.js";
+import { type RootState } from "../../context/store/store.js";
+import { useToast } from "../Toast/ToastContext.js";
 import { useTranslation } from "react-i18next";
 
 type buttonProps = {

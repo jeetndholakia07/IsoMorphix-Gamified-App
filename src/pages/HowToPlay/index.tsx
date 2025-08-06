@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
-import type { RootState } from "../../context/store/store";
-import GifPlayer from "./GifPlayer";
+import type { RootState } from "../../context/store/store.js";
+import GifPlayer from "./GifPlayer.js";
 
 const HowToPlay = () => {
     const gameInstructions = useSelector(

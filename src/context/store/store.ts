@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import userSlice from "../userSlice";
-import levelSlice from "../levelSlice";
-import moleculeSlice from "../moleculeSlice";
-import moleculeData from "../moleculeData";
-import gameInstructions from "../gameInstructions";
+import userSlice from "../userSlice.js";
+import levelSlice from "../levelSlice.js";
+import moleculeSlice from "../moleculeSlice.js";
+import moleculeData from "../moleculeData.js";
+import gameInstructions from "../gameInstructions.js";
 
 export const store = configureStore({
     reducer: {

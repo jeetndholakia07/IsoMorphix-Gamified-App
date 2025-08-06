@@ -1,15 +1,15 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
-import AtomGrid from "./components/AtomGrid";
-import { type Point } from "./components/bondUtils";
-import type { AtomGridRef } from "./components/AtomGrid";
+import AtomGrid from "./components/AtomGrid.js";
+import { type Point } from "./components/bondUtils.js";
+import type { AtomGridRef } from "./components/AtomGrid.js";
 import { useSelector } from "react-redux";
-import PowerButtons from "../../components/Gameplay/PowerButtons";
-import LevelInfo from "../../components/Gameplay/LevelInfo";
-import HintInfo from "../../components/Gameplay/HintInfo";
-import MonsterDisplay from "../../components/Animations/Monster/MonsterDisplay";
-import { type RootState } from "../../context/store/store";
-import { useMediaQuery } from "../../utils/useMediaQuery";
+import PowerButtons from "../../components/Gameplay/PowerButtons.js";
+import LevelInfo from "../../components/Gameplay/LevelInfo.js";
+import HintInfo from "../../components/Gameplay/HintInfo.js";
+import MonsterDisplay from "../../components/Animations/Monster/MonsterDisplay.js";
+import { type RootState } from "../../context/store/store.js";
+import { useMediaQuery } from "../../utils/useMediaQuery.js";
 
 const GamePlay = () => {
     const { id } = useParams();

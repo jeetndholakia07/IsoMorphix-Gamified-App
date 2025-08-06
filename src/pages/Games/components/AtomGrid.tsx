@@ -1,19 +1,19 @@
 import { useState, useEffect, useImperativeHandle, forwardRef, type ForwardRefRenderFunction } from "react";
-import type { GridBond, Point } from "./bondUtils";
-import { isSameBond, getDotCenter, connectionExists } from "./bondUtils";
-import SuccessModal from "../../../components/Modal/SuccessModal";
-import AlertModal from "../../../components/Modal/AlertModal";
-import AnimateHint from "../../../components/Animations/HintMove";
-import AnimateSuperPower from "../../../components/Animations/SuperPower";
-import AnimateReverseMove from "../../../components/Animations/ReverseMove";
-import AnimateSolution from "../../../components/Animations/ShowSolution";
+import type { GridBond, Point } from "./bondUtils.js";
+import { isSameBond, getDotCenter, connectionExists } from "./bondUtils.js";
+import SuccessModal from "../../../components/Modal/SuccessModal.js";
+import AlertModal from "../../../components/Modal/AlertModal.js";
+import AnimateHint from "../../../components/Animations/HintMove/index.js";
+import AnimateSuperPower from "../../../components/Animations/SuperPower/index.js";
+import AnimateReverseMove from "../../../components/Animations/ReverseMove/index.js";
+import AnimateSolution from "../../../components/Animations/ShowSolution/index.js";
 import "./animation.css";
-import { useToast } from "../../../components/Toast/ToastContext";
-import { useScore } from "../../../context/userSlice";
-import { type Atom } from "./bondUtils";
+import { useToast } from "../../../components/Toast/ToastContext.js";
+import { useScore } from "../../../context/userSlice.js";
+import { type Atom } from "./bondUtils.js";
 import { useTranslation } from "react-i18next";
-import StartGame from "./StartGame";
-import { useMediaQuery } from "../../../utils/useMediaQuery";
+import StartGame from "./StartGame.js";
+import { useMediaQuery } from "../../../utils/useMediaQuery.js";
 
 interface AtomGridProps {
   rows?: number;

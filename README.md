@@ -41,6 +41,6 @@ There are two different ways to run this project:
 
 3. Run the script "npm run dev" for running it locally on development mode. Or use script "npm run build" for running it on production.
 
-2) You can also access this Project LIVE ON:
+2) You can also access this Project LIVE ON: https://isomorphix.netlify.app
 
 © IsoMorphix 2025, All Rights Reserved.

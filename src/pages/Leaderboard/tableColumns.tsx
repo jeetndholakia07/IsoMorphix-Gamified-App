@@ -17,7 +17,7 @@ export const tableColumns = [
     },
     {
         header: "Country Flag",
-        cell: () => { return <img src="https://flagsapi.com/IN/shiny/64.png" alt="India Flag" className="text-white text-lg text-center w-10" /> }
+        cell: () => { return <img src="https://flagsapi.com/IN/shiny/64.png" loading="lazy" alt="India Flag" className="text-white text-lg text-center w-10" /> }
     },
     {
         header: "Country Name",

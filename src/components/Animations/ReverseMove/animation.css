@@ -1,0 +1,46 @@
+.reverse-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: reverseEffect 1s ease-in-out forwards, fadeOut 2s ease-in-out forwards 1s;
+    opacity: 1;
+}
+
+@keyframes reverseEffect {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.reverse-animation i {
+    font-size: 3rem; 
+    color: #ffffff; 
+    background-color: teal; 
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.reverse-animation i:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5), 0px 0px 40px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,147 @@
+/* For Hint Move */
+@keyframes pulse {
+    0% {
+        stroke-width: 4px;
+        stroke-opacity: 1;
+    }
+
+    50% {
+        stroke-width: 6px;
+        stroke-opacity: 0.7;
+    }
+
+    100% {
+        stroke-width: 4px;
+        stroke-opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        stroke: #fbbf24;
+    }
+
+    50% {
+        stroke: #3b82f6;
+    }
+
+    100% {
+        stroke: #fbbf24;
+    }
+}
+
+@keyframes reverseFlash {
+    0% {
+        stroke: #ef4444;
+        stroke-width: 4px;
+    }
+
+    50% {
+        stroke: #fbbf24;
+        stroke-width: 8px;
+    }
+
+    100% {
+        stroke: #ef4444;
+        stroke-width: 4px;
+    }
+}
+
+/* For Correct Bonds */
+.correct-bond {
+    animation: pulse 1s infinite;
+}
+
+/* For Hint Bonds */
+.hint-bond {
+    animation: flash 1s ease-in-out infinite;
+}
+
+/* For Reverse Move Bonds */
+.reverse-move-bond {
+    animation: reverseFlash 1s ease-in-out forwards;
+}
+
+/* For Super Power Animation */
+@keyframes superpower-fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes superpower-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes superpower-glow {
+    0% {
+        stroke: #22c55e;
+        stroke-width: 4px;
+        filter: blur(0px);
+    }
+
+    50% {
+        stroke: #84cc16;
+        stroke-width: 6px;
+        filter: blur(3px);
+    }
+
+    100% {
+        stroke: #22c55e;
+        stroke-width: 4px;
+        filter: blur(0px);
+    }
+}
+
+.superpower-fade-out {
+    animation: superpower-fade-out 1s forwards;
+}
+
+
+.superpower-restored-dot {
+    animation: superpower-fade-in 1s ease-in-out;
+}
+
+.superpower-glow-effect {
+    animation: superpower-glow 1.5s infinite;
+}
+
+/* For Eaten Dots */
+.eaten-dot {
+    animation: fadeOut 2s forwards, eatenEffect 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes eatenEffect {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

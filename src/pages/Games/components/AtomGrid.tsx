@@ -21,7 +21,6 @@ interface AtomGridProps {
   hintBonds?: GridBond[];
   validBonds: GridBond[];
   specialAtoms?: Atom[];
-  specialBonds?: GridBond[];
   setMonsterAppeared: (visible: boolean) => void;
   setMonsterMessage: (msg: string) => void;
   setMonsterPosition: (pos: Point) => void;
@@ -44,7 +43,6 @@ const AtomGrid: ForwardRefRenderFunction<AtomGridRef, AtomGridProps> = ({
   hintBonds = [],
   validBonds,
   specialAtoms = [],
-  specialBonds = [],
   setMonsterAppeared,
   setMonsterMessage,
   setMonsterPosition,

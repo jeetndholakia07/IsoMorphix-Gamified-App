@@ -4,17 +4,18 @@ import AppRoutes from './routes/AppRoutes';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Provider } from 'react-redux';
 import { store } from "./context/store/store";
-import i18n from './i18n/i18n';
 import { ToastProvider } from './components/Toast/ToastContext';
+// @ts-ignore
+import i18n from './i18n/i18n';
 
 function App() {
   return (
     <BrowserRouter>
-      <ToastProvider>
-        <Provider store={store}>
-          <AppRoutes />
-        </Provider>
-      </ToastProvider>
+        <ToastProvider>
+          <Provider store={store}>
+            <AppRoutes />
+          </Provider>
+        </ToastProvider>
     </BrowserRouter>
   )
 }

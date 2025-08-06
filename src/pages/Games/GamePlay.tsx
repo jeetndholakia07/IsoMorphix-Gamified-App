@@ -110,7 +110,6 @@ const GamePlay = () => {
                     hintBonds={moleculeData.bonds}
                     validBonds={moleculeData.challengeBonds}
                     specialAtoms={moleculeData.specialAtoms}
-                    specialBonds={moleculeData.specialBonds}
                     setMonsterAppeared={setMonsterAppeared}
                     setMonsterMessage={setMonsterMessage}
                     setMonsterPosition={setMonsterPosition}

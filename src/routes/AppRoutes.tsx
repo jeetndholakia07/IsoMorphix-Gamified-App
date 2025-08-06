@@ -14,7 +14,6 @@ const AppRoutes = () => {
     const userData = useSelector((state: RootState) => state.userData.user);
     const data = useMemo(() => [userData], [userData]);
     const columns = useMemo(() => tableColumns, []);
-    console.log(userData);
     return (
         <Routes>
             <Route element={<MainLayout />}>

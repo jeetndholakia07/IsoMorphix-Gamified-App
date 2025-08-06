@@ -94,9 +94,8 @@ const GamePlay = () => {
                     </>
                 )
             }
-
+            <div className="rounded-lg h-[70vh] max-h-[70vh] pb-0 flex items-center justify-center text-white text-lg font-bold shadow-inner border border-white/10">
             {/* Render Monster Animation */}
-            <div className="bg-purple-800 rounded-lg h-[70vh] max-h-[70vh] pb-0 flex items-center justify-center text-white text-lg font-bold shadow-inner border border-white/10">
                 {monsterAppeared && monsterPosition && (
                     <MonsterDisplay monsterPosition={monsterPosition} spacing={spacing} monsterMessage={monsterMessage} />
                 )}
